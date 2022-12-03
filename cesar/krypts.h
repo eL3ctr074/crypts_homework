@@ -60,7 +60,7 @@ public:
         _result = _slovo;
         bool flag = false;
 
-        QString *crypto_aplh = new QString[33];
+        QString crypto_aplh;
 
         for (int i = 0; i < slogan.length(); i++)
         {
@@ -86,7 +86,7 @@ public:
                 }
             }
         }
-        QString temp = *crypto_aplh;
+        QString temp = crypto_aplh;
         for (int i = 0; i < _slovo.length(); i++)
         {
             for (int j = 0; j < temp.length(); j++)
